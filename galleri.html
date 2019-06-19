@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="find og se vores farvorit film og billede så som den prisvindene film
+    den blå fisk">
+    <title>Galleri</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="Galleri">
+<header>
+    <picture >
+        <a href="index.html"> <img id="logo" src="images/logo-færdigt.png"></a>
+    </picture>
+
+    <nav>
+        <div class="navFlex">
+            <a href="index.html"><img class="navIcon" src="images/home-512.png"></a>
+            <h4>Forside</h4>
+        </div>
+
+        <div class="navFlex">
+            <a href="omUdd.html"><img class="navIcon" src="images/iconfinder_student_309036.png"></a>
+            <h4>Om uddannelsen</h4>
+        </div>
+
+        <div class="navFlex">
+            <a href="galleri.html"> <img class="navIcon" src="images/iconfinder_icons_pic_1564523.png"></a>
+            <h4 class="current">galleri</h4>
+        </div>
+
+        <div class="deskMenu navFlex">
+            <a href="nyheder.html"><img class="navIcon" src="images/iconfinder_16_-_News_2102052.png"></a>
+            <h4>nyheder</h4>
+        </div>
+
+        <div class="deskMenu navFlex">
+            <a href="omOs.html"><img class="navIcon" src="images/iconfinder_v-31_3162614.png"></a>
+            <h4>Om os </h4>
+        </div>
+
+        <div class="deskMenu navFlex">
+            <a href="kontakt.html"> <img class="navIcon" src="images/iconfinder_Contact_2_372893.png"></a>
+            <h4>kontakt</h4>
+        </div>
+
+        <div id="dropdown">
+            <button id="dropdownbutn"><img class="navIcon" src="images/iconfinder_more_126574.png"></button>
+            <ul>
+                <li>
+                    <a class="dropdowna" href="omOs.html">Om os</a>
+                    <a class="dropdowna" href="nyheder.html">Nyheder</a>
+                    <a class="dropdowna" href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<div class="spacer Sec1"></div>
+<h1 class="Sec2">Galleri</h1>
+
+<!--Denne kode er taget fra w3schools, har tilpasset den-->
+<div class="galleriContainer Sec3">
+
+    <div class="spacer Sec2"></div>
+    <h2 class="overskrifter">Billeder</h2>
+
+
+    <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/placeholder.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/img_1800.png" style="width:100%">
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="images/placeholder.jpg" style="width:100%" onclick="currentSlide(1)" alt="Gruppe billede">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/1.png" style="width:100%" onclick="currentSlide(2)" alt="Gruppe billede">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/2.png" style="width:100%" onclick="currentSlide(3)" alt="Undervisning">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/3.png" style="width:100%" onclick="currentSlide(4)" alt="Elev hilser på læeren">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/4.png" style="width:100%" onclick="currentSlide(5)" alt="Billede fra en scene">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/img_1800.png" style="width:100%" onclick="currentSlide(6)" alt="undervisning">
+        </div>
+    </div>
+</div>
+<!--lånt kode slut-->
+
+
+
+<div class="videoContainer Sec4">
+    <div class="spacer"></div>
+    <h2 class="overskrifter">Videoer</h2>
+
+    <div class="videoFlex">
+    <div class="video">
+        <h3 class="videoOverskrift">Den blå fisk</h3>
+        <video controls poster="images/Udklip.PNG">
+            <source src="images/Den+Blå+Fisk.mp4">
+        </video>
+    </div>
+
+    <div class="video">
+        <h3 class="videoOverskrift">RONDO</h3>
+        <video controls poster="images/Rondo.PNG">
+            <source src="images/RONDO+Film.mp4">
+        </video>
+    </div>
+
+    <div class="video">
+        <h3 class="videoOverskrift">10 Tips før du filmer</h3>
+        <video controls poster="images/10tips.PNG">
+            <source src="images/3.mp4">
+        </video>
+    </div>
+
+    <div class="video">
+        <h3 class="videoOverskrift">Biograf reklame</h3>
+        <video controls poster="images/bioReklame.PNG">
+            <source src="images/bio.mp4">
+        </video>
+    </div>
+    </div>
+</div>
+
+<footer>
+    <div class="spacerFooter"></div>
+    <div class="felxWrap">
+        <img class="footerImg" src="images/iconfinder_phone_1608790%20(1).png">
+        <a href="tel:25762106"> <h3>:25 76 21 06</h3></a>
+    </div>
+
+    <div class="felxWrap">
+        <img class="footerImg" src="images/iconfinder_008_Mail_183573%20(1).png">
+        <a href="mailto:mail@filmfabrikken.dk" target="_blank"><h3>:mail@filmfabrikken.dk</h3></a>
+
+
+        <picture>
+            <a href="https://www.facebook.com/Filmfabrikken"> <img class="social" src="images/iconfinder_facebook_circle_black_107153.png"></a>
+            <a href="https://www.youtube.com/channel/UC37s78kXjsZ0wqwqlpVxzIQ"><img class="social" src="images/iconfinder_58-youtube_104445.png"></a>
+        </picture>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
